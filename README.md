@@ -9,11 +9,11 @@ The purpose of this project is to demonstrate your ability to collect, work with
 
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
 
-[The data location](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
+[The original data location](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
 
 Here are the data for the project: 
 
-[Original data location](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+[Project data location](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
 
 You should create one R script called run_analysis.R that does the following. 
 1. Merges the training and the test sets to create one data set.
@@ -21,6 +21,13 @@ You should create one R script called run_analysis.R that does the following.
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+## Steps to get the required tidy data sets:
+
+1. Download the [project data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+2. Unzip it into your R working directory
+3. Run/source the **run_analysis.R** file
+4. The tidy data sets will be in the **persNamedActX** and **tidyMeanUCIHAR** tables in R, the second one is also the return value of the script. Both tidy data set will be also written out to text files into the working directory after running the script as **"cleanfullUCIHAR.txt"** and **"tidyMeanUCIHAR.txt"**.
 
 ## Content
 
